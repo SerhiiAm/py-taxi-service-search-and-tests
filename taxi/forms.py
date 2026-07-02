@@ -52,7 +52,7 @@ def validate_license_number(
     return license_number
 
 
-class ManufacturerSearchForm(forms.ModelForm):
+class ManufacturerSearchForm(forms.Form):
     name = forms.CharField(
         max_length=255,
         required=False,
